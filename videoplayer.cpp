@@ -28,12 +28,13 @@ void VideoPlayer::play()
 
 void VideoPlayer::run()
 {
+    //demo
     int index = 1;
     while(true)
     {
         emit signalCreateVideoFrame(QImage("imgs/"+QString::number(index)+".jpg"));
         index += 1;
-        if(index>=10)
+        if(index > 10)
         {
             index = 1;
         }
