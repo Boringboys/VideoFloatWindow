@@ -1,0 +1,5 @@
+# Qt Creator userprifile
+*.pro.user
+
+# Auto Save File
+*.autosave
