@@ -23,16 +23,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 # ffmpeg库
-#INCLUDEPATH += ffmpeg-4.3-win32-dev/include \
+INCLUDEPATH += ffmpeg-4.3-win32-dev/include \
 
-#LIBS += ffmpeg-4.3-win32-dev/lib/avcodec.lib \
-#        ffmpeg-4.3-win32-dev/lib/avdevice.lib \
-#        ffmpeg-4.3-win32-dev/lib/avfilter.lib \
-#        ffmpeg-4.3-win32-dev/lib/avformat.lib \
-#        ffmpeg-4.3-win32-dev/lib/avutil.lib \
-#        ffmpeg-4.3-win32-dev/lib/postproc.lib \
-#        ffmpeg-4.3-win32-dev/lib/swresample.lib \
-#        ffmpeg-4.3-win32-dev/lib/swscale.lib
+LIBS += ffmpeg-4.3-win32-dev/lib/avcodec.lib \
+        ffmpeg-4.3-win32-dev/lib/avdevice.lib \
+        ffmpeg-4.3-win32-dev/lib/avfilter.lib \
+        ffmpeg-4.3-win32-dev/lib/avformat.lib \
+        ffmpeg-4.3-win32-dev/lib/avutil.lib \
+        ffmpeg-4.3-win32-dev/lib/postproc.lib \
+        ffmpeg-4.3-win32-dev/lib/swresample.lib \
+        ffmpeg-4.3-win32-dev/lib/swscale.lib
 
 SOURCES += \
         main.cpp \

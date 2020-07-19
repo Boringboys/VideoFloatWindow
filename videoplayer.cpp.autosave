@@ -28,6 +28,7 @@ void VideoPlayer::play()
 
 void VideoPlayer::run()
 {
+    //demo
     int index = 1;
     while(true)
     {
