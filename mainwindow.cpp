@@ -88,11 +88,24 @@ MainWindow::MainWindow(QWidget *parent)
     hotkey_hide = new QHotkey(QKeySequence("meta+alt+h"), true);
     hotkey_show = new QHotkey(QKeySequence("meta+alt+s"), true);
     connect(hotkey_hide, &QHotkey::activated, [this](){
-        this->setVisible(false);
+        if(!IsMainWindowFullScreen)
+        {
+            this->setVisible(false);
+        }
+        else
+        {
+            this->showNormal();
+            this->setCursor(Qt::SizeAllCursor);
+            IsMainWindowFullScreen = false;
+            this->setVisible(false);
+        }
     });
     connect(hotkey_show, &QHotkey::activated, [this](){
-        this->showNormal();
-        this->activateWindow();
+        if(!IsMainWindowFullScreen)
+        {
+            this->showNormal();
+            this->activateWindow();
+        }
     });
 
     connect(&hotkeythread, SIGNAL(signalHotKeyPress(int)), this, SLOT(signalHotKeyGet(int)));
