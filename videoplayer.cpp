@@ -3,13 +3,13 @@
 #include <iostream>
 #include <QDebug>
 
-extern "C"
-{
-    #include "libavcodec/avcodec.h"
-//    #include "libavformat/avformat.h"
-//    #include "libavutil/pixfmt.h"
-//    #include "libswscale/swscale.h"
-}
+//extern "C"
+//{
+//    #include "libavcodec/avcodec.h"
+////    #include "libavformat/avformat.h"
+////    #include "libavutil/pixfmt.h"
+////    #include "libswscale/swscale.h"
+//}
 
 VideoPlayer::VideoPlayer()
 {
